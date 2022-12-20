@@ -60,6 +60,9 @@ class test:
 
 
     def part_two(self):
+        self.indeces_dict[len(self.indeces_dict)] = [[2]]
+        self.indeces_dict[len(self.indeces_dict)] = [[6]]
+
         for i in range(len(self.indeces_dict)):
             for j in range(0, len(self.indeces_dict) - i - 1):
                 self.check_two_lists(self.indeces_dict[j], self.indeces_dict[j+1])
